@@ -1,0 +1,35 @@
+p
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px;border-color: red;box-sizing: 5px;
+    font-size: xx-large;
+    text-align: center;
+
+
+}
+ body
+ {
+    background-color:bisque
+
+ }
+ image
+{
+    align-self: center;
+    size-adjust:small;
+ }
+ h1
+ {
+    color-scheme: blue;
+    font-style: oblique;
+    text-align: center;
+    align-self: center;
+    font-size: xx-large;
+ }
+ a
+ {
+    color-scheme: blue;
+    font-style: oblique;
+    text-align: center;
+    align-self: center;
+    font-size: xx-large;
+ }
