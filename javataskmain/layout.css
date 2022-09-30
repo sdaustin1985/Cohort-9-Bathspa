@@ -1,0 +1,20 @@
+body {
+    background-image:url(../javataskmain/background.png) ;
+}
+nav
+{
+    
+    margin-top: 5px;
+  font-style: oblique;
+  width: 100%;
+  font-size: large;
+  text-align: center;
+  justify-content: space-between;
+  color: black;
+  text-decoration: none;
+  padding: 50px;
+}
+.logo
+{
+justify-content: flex-end;    
+}
