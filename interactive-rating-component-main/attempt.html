@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+
+</head>
+
+<body>
+  <main class="container">
+    <form class="form" action="rating.html" method="get">
+
+      <img src="images/icon-star.svg" alt="star icon" class="frame">
+
+      <h1 class="header">How did we do?</h1>
+
+      <fieldset>
+        <legend class="description">Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</legend>
+        <div class="rating-container">
+          <input type="radio" name="rating" id="rating-btn1" value="1" class="hidden" required>
+          <label for="rating-btn1" class="frame">1</label>
+
+          <input type="radio" name="rating" id="rating-btn2" value="2" class="hidden" required>
+          <label for="rating-btn2" class="frame">2</label>
+        
+          <input type="radio" name="rating" id="rating-btn3" value="3" class="hidden" required>
+          <label for="rating-btn3" class="frame">3</label>
+        
+          <input type="radio" name="rating" id="rating-btn4" value="4" class="hidden" required>
+          <label for="rating-btn4" class="frame">4</label>
+        
+          <input type="radio" name="rating" id="rating-btn5" value="5" class="hidden" required>
+          <label for="rating-btn5" class="frame">5</label>
+        </div>
+      </fieldset>
+
+      <button type="submit" value="Submit" class="btn">Submit</button>
+
+    </form>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/sdaustin1985/Cohort-9-Bathspa">Shaun Austin</a>.
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(217, 12%, 63%);
+    --mediumGray: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1rem;
+    background-color: var(--veryDarkBlue);
+}
+
+/* reused */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+/* reused */
+.form {
+    background-image: radial-gradient(circle farthest-corner at 50% 0%, var(--darkBlue) 0%, var(--veryDarkBlue) 140%);
+    max-width: 27.33rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.frame {
+    background-color: var(--darkBlue);
+    border-radius: 50%;
+    padding: 1rem;
+    width: 3.333rem;
+    height: 3.333rem;
+    text-align: center;
+}
+
+/* reused */
+h1.header {
+    color: var(--white);
+    margin: 0.9em 0 0.3em 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+fieldset {
+    border: none;
+}
+
+/* reused */
+.description {
+    line-height: 1.5em;
+}
+
+.description, .rating-container label {
+    color: var(--lightGray);
+}
+
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.hidden {
+    pointer-events: none;
+    position: fixed;
+    display: none;
+}
+
+.hidden:checked + label.frame {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.rating-container label {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.rating-container label:hover {
+    background-color: var(--lightGray);
+    color: var(--white);
+}
+
+.btn {
+    background-color: var(--orange);
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 3.5em;
+    text-transform: uppercase;
+    color: var(--white);
+    border-radius: 1.75em;
+    border-width: 0.5px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.btn:active {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+/* For rating.html specific styling */
+article.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2.3rem 3rem 2.3rem;
+}
+
+img.icon {
+    margin-top: 1rem;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+img.icon:hover {
+    transform: scale(1.1, 1.1);
+}
+
+div.rating-message {
+    background-color: var(--darkBlue);
+    color: var(--orange);
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    margin: 2rem 0 0.7rem 0;
+}
+
+.attribution {
+    font-size: 0.733rem;
+    text-align: center;
+    margin-top: 1.5em;
+    color: var(--lightGray);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 470px) {
+    html {
+        font-size: 12px;
+    }
+
+    .form {
+        margin: 0 2em;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    html {
+        font-size: 9px;
+    }
+
+    .form {
+        margin: 0 2em;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    html {
+        font-size: 10px;
+    }
+}
