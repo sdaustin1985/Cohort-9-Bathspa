@@ -1,0 +1,29 @@
+.maingrid
+{
+    justify-content: center;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    height: auto;
+    width: auto;
+    background-color: aquamarine;
+}
+.item1
+{
+    justify-content: center;
+    display: flexbox;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: blue;
+}
+.item2
+{
+    text-align: center;
+    background-color: beige;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
